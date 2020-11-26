@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 define('WIKIPEDIA_SUBJECT_TFA', 0); // Today's featured article
 define('WIKIPEDIA_SUBJECT_DYK', 1); // Did you know...

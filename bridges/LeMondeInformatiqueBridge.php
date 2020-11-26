@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class LeMondeInformatiqueBridge extends FeedExpander {
 
 	const MAINTAINER = 'ORelio';

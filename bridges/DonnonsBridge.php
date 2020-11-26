@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * Retourne les dons d'une recherche filtrée sur le site Donnons.org
  * Example: https://donnons.org/Sport/Ile-de-France

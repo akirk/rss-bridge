@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FDroidBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Mitsukarenai';

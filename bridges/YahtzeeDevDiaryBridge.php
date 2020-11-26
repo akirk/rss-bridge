@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class YahtzeeDevDiaryBridge extends BridgeAbstract {
 	const MAINTAINER = 'somini';
 	const NAME = "Yahtzee's Dev Diary";

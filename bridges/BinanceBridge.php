@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BinanceBridge extends BridgeAbstract {
 	const NAME = 'Binance';
 	const URI = 'https://www.binance.com';

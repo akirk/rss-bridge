@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class EpicgamesBridge extends BridgeAbstract {
 
 	const NAME = 'Epic Games Store News';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DevToBridge extends BridgeAbstract {
 
 	const CONTEXT_BY_TAG = 'By tag';

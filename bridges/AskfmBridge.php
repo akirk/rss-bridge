@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AskfmBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'az5he6ch, logmanoriginal';

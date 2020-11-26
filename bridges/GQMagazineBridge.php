@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 /**
  * An extension of the previous SexactuBridge to cover the whole GQMagazine.

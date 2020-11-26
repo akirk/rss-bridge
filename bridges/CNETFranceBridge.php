@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class CNETFranceBridge extends FeedExpander
 {
 	const MAINTAINER = 'leomaradan';

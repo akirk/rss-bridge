@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class NineGagBridge extends BridgeAbstract {
 	const NAME = '9gag Bridge';

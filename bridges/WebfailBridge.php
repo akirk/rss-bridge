@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WebfailBridge extends BridgeAbstract {
 	const MAINTAINER = 'logmanoriginal';
 	const URI = 'https://webfail.com';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class CachetBridge extends BridgeAbstract {
 	const NAME = 'Cachet Bridge';

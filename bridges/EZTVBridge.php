@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class EZTVBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'alexAubin';

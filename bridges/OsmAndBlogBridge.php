@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class OsmAndBlogBridge extends BridgeAbstract {
 	const NAME = 'OsmAnd Blog';
 	const URI = 'https://osmand.net/';

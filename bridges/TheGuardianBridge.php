@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TheGuardianBridge extends FeedExpander {
 	const MAINTAINER = 'IceWreck';
 	const NAME = 'The Guardian Bridge';

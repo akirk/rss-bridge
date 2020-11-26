@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TheWhiteboardBridge extends BridgeAbstract {
 	const NAME = 'The Whiteboard';
 	const URI = 'https://www.the-whiteboard.com/';

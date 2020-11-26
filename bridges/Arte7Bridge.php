@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class Arte7Bridge extends BridgeAbstract {
 
 	// const MAINTAINER = 'mitsukarenai';

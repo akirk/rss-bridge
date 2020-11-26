@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ThePirateBayBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'mitsukarenai';

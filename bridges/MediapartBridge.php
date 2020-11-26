@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class MediapartBridge extends FeedExpander {
 	const MAINTAINER = 'killruana';

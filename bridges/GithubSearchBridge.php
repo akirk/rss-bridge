@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GithubSearchBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'corenting';

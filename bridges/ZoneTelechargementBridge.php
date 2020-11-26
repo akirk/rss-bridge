@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ZoneTelechargementBridge extends BridgeAbstract {
 
 	/*  This bridge was initally done for the Website Zone Telechargement,

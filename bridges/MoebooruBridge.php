@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MoebooruBridge extends BridgeAbstract {
 
 	const NAME = 'Moebooru';

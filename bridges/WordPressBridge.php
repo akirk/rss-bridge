@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WordPressBridge extends FeedExpander {
 	const MAINTAINER = 'aledeg';
 	const NAME = 'Wordpress Bridge';

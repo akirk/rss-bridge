@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SIMARBridge extends BridgeAbstract {
 	const NAME = 'SIMAR';
 	const URI = 'http://www.simar-louresodivelas.pt/';

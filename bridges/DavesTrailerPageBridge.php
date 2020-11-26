@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DavesTrailerPageBridge extends BridgeAbstract {
 	const MAINTAINER = 'johnnygroovy';
 	const NAME = 'Daves Trailer Page Bridge';

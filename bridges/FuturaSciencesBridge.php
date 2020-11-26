@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FuturaSciencesBridge extends FeedExpander {
 
 	const MAINTAINER = 'ORelio';

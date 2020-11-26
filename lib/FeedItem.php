@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * This file is part of RSS-Bridge, a PHP project capable of generating RSS and
  * Atom feeds for websites that don't have one.
@@ -71,6 +72,7 @@ class FeedItem {
 	 *
 	 * ```PHP
 	 * <?php
+namespace RSS_Bridge;
 	 * $item = array();
 	 *
 	 * $item['uri'] = 'https://www.github.com/rss-bridge/rss-bridge/';
@@ -89,6 +91,7 @@ class FeedItem {
 	 *
 	 * ```PHP
 	 * <?php
+namespace RSS_Bridge;
 	 * $feedItem = \FeedItem();
 	 *
 	 * $feedItem->uri = 'https://www.github.com/rss-bridge/rss-bridge/';

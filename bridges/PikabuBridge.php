@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class PikabuBridge extends BridgeAbstract {
 
 	const NAME = 'Пикабу';

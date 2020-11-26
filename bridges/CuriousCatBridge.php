@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class CuriousCatBridge extends BridgeAbstract {
 	const NAME = 'Curious Cat Bridge';
 	const URI = 'https://curiouscat.me';

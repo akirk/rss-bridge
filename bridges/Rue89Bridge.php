@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class Rue89Bridge extends BridgeAbstract {
 
 	const MAINTAINER = 'teromene';

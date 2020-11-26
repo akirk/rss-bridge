@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class OneFortuneADayBridge extends BridgeAbstract {
 	const NAME = 'One Fortune a Day';
 	const URI = 'https://github.com/fulmeek';

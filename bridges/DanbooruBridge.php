@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DanbooruBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'mitsukarenai, logmanoriginal';

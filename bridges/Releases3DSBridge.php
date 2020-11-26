@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class Releases3DSBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'ORelio';

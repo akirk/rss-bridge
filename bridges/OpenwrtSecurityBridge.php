@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class OpenwrtSecurityBridge extends BridgeAbstract {
 	const NAME = 'OpenWrt Security Advisories';
 	const URI = 'https://openwrt.org/advisory/start';

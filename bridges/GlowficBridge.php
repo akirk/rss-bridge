@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GlowficBridge extends BridgeAbstract {
 	const MAINTAINER = 'l1n';
 	const NAME = 'Glowfic Bridge';

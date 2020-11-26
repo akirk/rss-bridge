@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class AmazonPriceTrackerBridge extends BridgeAbstract {
 	const MAINTAINER = 'captn3m0';

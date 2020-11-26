@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DailymotionBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'mitsukarenai';

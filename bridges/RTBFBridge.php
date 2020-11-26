@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class RTBFBridge extends BridgeAbstract {
 	const NAME = 'RTBF Bridge';
 	const URI = 'http://www.rtbf.be/auvio/';

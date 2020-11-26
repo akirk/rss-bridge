@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DribbbleBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'quentinus95';

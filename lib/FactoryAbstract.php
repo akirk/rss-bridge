@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * This file is part of RSS-Bridge, a PHP project capable of generating RSS and
  * Atom feeds for websites that don't have one.
@@ -37,7 +38,7 @@ abstract class FactoryAbstract {
 		}
 
 		if(!file_exists($dir)) {
-			throw new \Exception('Working directory does not exist!');
+			throw new \Exception('Working directory ' . $dir . ' does not exist!');
 		}
 
 		if(!is_dir($dir)) {

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class LinkedInCompanyBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'regisenguehard';

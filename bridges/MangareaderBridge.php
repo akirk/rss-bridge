@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MangareaderBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'logmanoriginal';

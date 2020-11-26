@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ZenodoBridge extends BridgeAbstract {
 	const MAINTAINER = 'theradialactive';
 	const NAME = 'Zenodo';

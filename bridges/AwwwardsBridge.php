@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AwwwardsBridge extends BridgeAbstract {
 	const NAME = 'Awwwards';
 	const URI = 'https://www.awwwards.com/';

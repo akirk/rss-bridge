@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AllocineFRBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'superbaillot.net';

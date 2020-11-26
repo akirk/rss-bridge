@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ReporterreBridge extends BridgeAbstract {
 
 		const MAINTAINER = 'nyutag';

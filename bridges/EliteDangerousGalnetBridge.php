@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class EliteDangerousGalnetBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'corenting';

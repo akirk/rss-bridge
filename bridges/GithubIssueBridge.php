@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GithubIssueBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Pierre Mazière';

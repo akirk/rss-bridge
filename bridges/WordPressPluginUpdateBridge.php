@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WordPressPluginUpdateBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'teromene';

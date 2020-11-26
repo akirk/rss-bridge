@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GithubTrendingBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'liamka';

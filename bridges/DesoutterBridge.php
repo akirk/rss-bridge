@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DesoutterBridge extends BridgeAbstract {
 
 	const CATEGORY_NEWS = 'News & Events';

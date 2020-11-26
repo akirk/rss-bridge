@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FourchanBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'mitsukarenai';

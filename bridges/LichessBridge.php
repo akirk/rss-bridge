@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class LichessBridge  extends FeedExpander {
 
 	const MAINTAINER = 'AmauryCarrade';

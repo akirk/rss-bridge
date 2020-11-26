@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class RoadAndTrackBridge extends BridgeAbstract {
 	const MAINTAINER = 'teromene';
 	const NAME = 'Road And Track Bridge';

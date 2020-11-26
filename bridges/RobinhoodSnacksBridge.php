@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class RobinhoodSnacksBridge extends BridgeAbstract {
 	const MAINTAINER = 'johnpc';

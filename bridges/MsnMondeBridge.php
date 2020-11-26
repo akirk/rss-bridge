@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MsnMondeBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'kranack';

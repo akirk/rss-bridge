@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BundesbankBridge extends BridgeAbstract {
 
 	const PARAM_LANG = 'lang';

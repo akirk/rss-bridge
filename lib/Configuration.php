@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * This file is part of RSS-Bridge, a PHP project capable of generating RSS and
  * Atom feeds for websites that don't have one.
@@ -102,10 +103,6 @@ final class Configuration {
 		if(!extension_loaded('json'))
 			self::reportError('"json" extension not loaded. Please check "php.ini"');
 
-		// Check cache folder permissions (write permissions required)
-		if(!is_writable(PATH_CACHE))
-			self::reportError('RSS-Bridge does not have write permissions for ' . PATH_CACHE . '!');
-
 	}
 
 	/**
@@ -151,7 +148,7 @@ final class Configuration {
 		}
 
 		if(!is_string(self::getConfig('system', 'timezone'))
-		|| !in_array(self::getConfig('system', 'timezone'), timezone_identifiers_list(DateTimeZone::ALL_WITH_BC)))
+		|| !in_array(self::getConfig('system', 'timezone'), timezone_identifiers_list(\DateTimeZone::ALL_WITH_BC)))
 			self::reportConfigurationError('system', 'timezone');
 
 		date_default_timezone_set(self::getConfig('system', 'timezone'));
@@ -289,9 +286,6 @@ final class Configuration {
 	 * @return void
 	 */
 	private static function reportError($message) {
-
-		header('Content-Type: text/plain', true, 500);
-		die('Configuration error' . PHP_EOL . $message);
-
+		throw new Exception( $message );
 	}
 }

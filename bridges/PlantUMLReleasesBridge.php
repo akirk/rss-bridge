@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 /**
  * PlantUML releases bridge showing latest releases content

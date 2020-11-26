@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FabriceBellardBridge extends BridgeAbstract {
 	const NAME = 'Fabrice Bellard';
 	const URI = 'https://bellard.org/';

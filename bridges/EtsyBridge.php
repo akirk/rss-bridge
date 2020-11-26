@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class EtsyBridge extends BridgeAbstract {
 
 	const NAME = 'Etsy search';

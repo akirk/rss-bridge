@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TwitchBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Roliga';

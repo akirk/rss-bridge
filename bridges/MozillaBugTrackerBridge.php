@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MozillaBugTrackerBridge extends BridgeAbstract {
 
 	const NAME = 'Mozilla Bug Tracker';

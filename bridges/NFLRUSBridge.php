@@ -1,4 +1,6 @@
-﻿<?php
+<?php
+namespace RSS_Bridge;
+
 class NFLRUSBridge extends BridgeAbstract {
 
 	const NAME = 'NFLRUS';

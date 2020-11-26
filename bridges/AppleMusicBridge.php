@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class AppleMusicBridge extends BridgeAbstract {
 	const NAME = 'Apple Music';

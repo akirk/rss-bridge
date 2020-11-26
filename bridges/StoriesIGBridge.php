@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class StoriesIGBridge extends BridgeAbstract {
 
 	const NAME = 'Instagram Stories';

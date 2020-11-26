@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class CNETBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'ORelio';

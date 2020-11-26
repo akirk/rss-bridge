@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TinyLetterBridge extends BridgeAbstract {
 	const NAME = 'Tiny Letter';
 	const URI = 'https://tinyletter.com/';

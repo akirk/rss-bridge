@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BandcampBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'sebsauvage, Roliga';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class NovelUpdatesBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'albirew';

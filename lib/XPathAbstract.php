@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 /**
  * An alternative abstract class for bridges utilizing XPath expressions

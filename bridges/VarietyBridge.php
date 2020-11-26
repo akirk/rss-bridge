@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class VarietyBridge extends FeedExpander {
 
 	const MAINTAINER = 'IceWreck';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MediapartBlogsBridge extends BridgeAbstract {
 	const NAME = 'Mediapart Blogs';
 	const BASE_URI = 'https://blogs.mediapart.fr';

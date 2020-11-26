@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ScoopItBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Pitchoule';

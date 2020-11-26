@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DemoBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'teromene';

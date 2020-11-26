@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class UsbekEtRicaBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'logmanoriginal';

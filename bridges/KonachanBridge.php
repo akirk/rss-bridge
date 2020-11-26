@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 require_once('MoebooruBridge.php');
 
 class KonachanBridge extends MoebooruBridge {

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class EsquerdaNetBridge extends FeedExpander {
 	const MAINTAINER = 'somini';
 	const NAME = 'Esquerda.net';

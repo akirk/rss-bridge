@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 require_once(__DIR__ . '/DealabsBridge.php');
 class HotUKDealsBridge extends PepperBridgeAbstract {

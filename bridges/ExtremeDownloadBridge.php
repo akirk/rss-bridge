@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ExtremeDownloadBridge extends BridgeAbstract {
 	const NAME = 'Extreme Download';
 	const URI = 'https://www.extreme-down.tv/';

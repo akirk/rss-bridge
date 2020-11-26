@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DiarioDeNoticiasBridge extends BridgeAbstract {
 	const NAME = 'Diário de Notícias (PT)';
 	const URI = 'https://dn.pt';

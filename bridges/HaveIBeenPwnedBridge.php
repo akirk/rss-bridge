@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class HaveIBeenPwnedBridge extends BridgeAbstract {
 	const NAME = 'Have I Been Pwned (HIBP) Bridge';
 	const URI = 'https://haveibeenpwned.com';

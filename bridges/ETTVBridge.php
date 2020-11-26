@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ETTVBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'GregThib';

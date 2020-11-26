@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BAEBridge extends BridgeAbstract {
 	const MAINTAINER = 'couraudt';
 	const NAME = 'Bourse Aux Equipiers Bridge';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TrelloBridge extends BridgeAbstract {
 	const NAME = 'Trello Bridge';
 	const URI = 'https://trello.com/';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ViadeoCompanyBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'regisenguehard';

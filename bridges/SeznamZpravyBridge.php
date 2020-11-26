@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SeznamZpravyBridge extends BridgeAbstract {
 	const NAME = 'Seznam Zprávy Bridge';
 	const URI = 'https://seznamzpravy.cz';

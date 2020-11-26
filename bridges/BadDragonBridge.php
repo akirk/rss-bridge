@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BadDragonBridge extends BridgeAbstract {
 	const NAME = 'Bad Dragon Bridge';
 	const URI = 'https://bad-dragon.com/';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class PcGamerBridge extends BridgeAbstract
 {
 	const NAME = 'PC Gamer';

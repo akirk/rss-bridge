@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MozillaSecurityBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'm0le.net';

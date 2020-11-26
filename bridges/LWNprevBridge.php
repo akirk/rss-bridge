@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class LWNprevBridge extends BridgeAbstract{
 	const MAINTAINER = 'Pierre Mazière';
 	const NAME = 'LWN Free Weekly Edition';

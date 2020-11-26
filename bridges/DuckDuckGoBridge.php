@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DuckDuckGoBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Astalaseven';

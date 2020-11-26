@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MondeDiploBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Pitchoule';

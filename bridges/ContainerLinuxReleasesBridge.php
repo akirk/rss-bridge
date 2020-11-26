@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ContainerLinuxReleasesBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'captn3m0';

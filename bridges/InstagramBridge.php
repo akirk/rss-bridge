@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class InstagramBridge extends BridgeAbstract {
 
 	// const MAINTAINER = 'pauder';

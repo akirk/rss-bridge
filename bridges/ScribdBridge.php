@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ScribdBridge extends BridgeAbstract {
 	const NAME = 'Scribd Bridge';
 	const URI = 'https://www.scribd.com';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DiarioDoAlentejoBridge extends BridgeAbstract {
 	const MAINTAINER = 'somini';
 	const NAME = 'Diário do Alentejo';

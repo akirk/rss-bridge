@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
 * Returns the 100 most recent links in results in past year, sorting by date (most recent first).
 * Example:

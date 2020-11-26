@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class KernelBugTrackerBridge extends BridgeAbstract {
 
 	const NAME = 'Kernel Bug Tracker';

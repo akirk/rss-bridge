@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FB2Bridge extends BridgeAbstract {
 
 	const MAINTAINER = 'teromene';

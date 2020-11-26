@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class VimeoBridge extends BridgeAbstract {
 

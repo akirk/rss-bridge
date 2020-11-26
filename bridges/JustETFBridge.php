@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class JustETFBridge extends BridgeAbstract {
 	const NAME = 'justETF Bridge';
 	const URI = 'https://www.justetf.com';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WikiLeaksBridge extends BridgeAbstract {
 	const NAME = 'WikiLeaks';
 	const URI = 'https://wikileaks.org';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ModelKarteiBridge extends BridgeAbstract {
 	const NAME = 'model-kartei.de';
 	const URI = 'https://www.model-kartei.de/';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * This file is part of RSS-Bridge, a PHP project capable of generating RSS and
  * Atom feeds for websites that don't have one.
@@ -56,6 +57,7 @@ class CacheFactory extends FactoryAbstract {
 
 		require_once $filePath;
 
+		$name = __NAMESPACE__ . '\\' . $name;
 		if((new \ReflectionClass($name))->isInstantiable()) {
 			return new $name();
 		}

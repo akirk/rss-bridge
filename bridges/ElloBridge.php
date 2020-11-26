@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ElloBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'teromene';

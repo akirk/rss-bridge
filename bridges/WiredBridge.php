@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WiredBridge extends FeedExpander {
 	const MAINTAINER = 'ORelio';
 	const NAME = 'WIRED Bridge';

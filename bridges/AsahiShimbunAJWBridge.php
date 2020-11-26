@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AsahiShimbunAJWBridge extends BridgeAbstract {
 	const NAME = 'Asahi Shimbun AJW';
 	const BASE_URI = 'http://www.asahi.com';

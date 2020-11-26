@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DerpibooruBridge extends BridgeAbstract {
 	const NAME = 'Derpibooru Bridge';
 	const URI = 'https://derpibooru.org/';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FeedExpanderExampleBridge extends FeedExpander {
 
 	const MAINTAINER = 'logmanoriginal';

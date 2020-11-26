@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class IndeedBridge extends BridgeAbstract {
 
 	const NAME = 'Indeed';

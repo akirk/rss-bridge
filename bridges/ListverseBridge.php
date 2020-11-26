@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ListverseBridge extends FeedExpander {
 
 	const MAINTAINER = 'IceWreck';

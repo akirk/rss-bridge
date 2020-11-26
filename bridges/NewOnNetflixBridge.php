@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class NewOnNetflixBridge extends BridgeAbstract {
 	const NAME = 'NewOnNetflix removals bridge';

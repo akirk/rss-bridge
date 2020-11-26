@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WosckerBridge extends BridgeAbstract {
 	const NAME = 'Woscker Bridge';
 	const URI = 'https://woscker.com/';

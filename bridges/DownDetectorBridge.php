@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DownDetectorBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'teromene';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SteamBridge extends BridgeAbstract {
 
 	const NAME = 'Steam Bridge';

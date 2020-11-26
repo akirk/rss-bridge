@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class OpenwhydBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'kranack';

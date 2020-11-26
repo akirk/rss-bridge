@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 define('GIPHY_LIMIT', 10);
 
 class GiphyBridge extends BridgeAbstract {

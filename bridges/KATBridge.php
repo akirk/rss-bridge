@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class KATBridge extends BridgeAbstract {
 	const MAINTAINER = 'niawag';
 	const NAME = 'KickassTorrents';

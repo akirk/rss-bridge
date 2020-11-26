@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 ini_set('max_execution_time', '300');
 class NordbayernBridge extends BridgeAbstract {
 

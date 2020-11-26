@@ -15,8 +15,8 @@ timezone = "UTC"
 [cache]
 
 ; Defines the cache type used by RSS-Bridge
-; "file" = FileCache (default)
-type = "file"
+; type = "file"
+type = "no"
 
 ; Allow users to specify custom timeout for specific requests.
 ; true  = enabled

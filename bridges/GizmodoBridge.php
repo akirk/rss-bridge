@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GizmodoBridge extends FeedExpander {
 
 	const MAINTAINER = 'polopollo';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class NextInpactBridge extends FeedExpander {
 
 	const MAINTAINER = 'qwertygc and ORelio';

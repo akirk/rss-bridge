@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BrutBridge extends BridgeAbstract {
 	const NAME = 'Brut Bridge';
 	const URI = 'https://www.brut.media';

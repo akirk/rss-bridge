@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FurAffinityUserBridge extends BridgeAbstract {
 	const NAME = 'FurAffinity User Gallery';
 	const URI = 'https://www.furaffinity.net';

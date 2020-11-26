@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WorldCosplayBridge extends BridgeAbstract {
 	const NAME = 'WorldCosplay Bridge';
 	const URI = 'https://worldcosplay.net/';

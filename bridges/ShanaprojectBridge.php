@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ShanaprojectBridge extends BridgeAbstract {
 	const MAINTAINER = 'logmanoriginal';
 	const NAME = 'Shanaproject Bridge';

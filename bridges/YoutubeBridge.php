@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
 * RssBridgeYoutube
 * Returns the newest videos

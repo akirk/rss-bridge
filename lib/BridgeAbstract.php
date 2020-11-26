@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * This file is part of RSS-Bridge, a PHP project capable of generating RSS and
  * Atom feeds for websites that don't have one.

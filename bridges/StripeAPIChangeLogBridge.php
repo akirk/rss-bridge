@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class StripeAPIChangeLogBridge extends BridgeAbstract {
 	const MAINTAINER = 'Pierre Mazière';
 	const NAME = 'Stripe API Changelog';

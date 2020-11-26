@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FolhaDeSaoPauloBridge extends FeedExpander {
 	const MAINTAINER = 'somini';
 	const NAME = 'Folha de São Paulo';

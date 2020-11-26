@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TheYeteeBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Monsieur Poutounours';

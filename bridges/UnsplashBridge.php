@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class UnsplashBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'nel50n';

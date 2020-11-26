@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class CommonDreamsBridge extends FeedExpander {
 
 	const MAINTAINER = 'nyutag';

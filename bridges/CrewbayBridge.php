@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class CrewbayBridge extends BridgeAbstract {
 	const MAINTAINER = 'couraudt';
 	const NAME = 'Crewbay Bridge';

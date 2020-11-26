@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FicbookBridge extends BridgeAbstract {
 
 	const NAME = 'Ficbook Bridge';

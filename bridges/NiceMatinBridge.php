@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class NiceMatinBridge extends FeedExpander {
 
 	const MAINTAINER = 'pit-fgfjiudghdf';

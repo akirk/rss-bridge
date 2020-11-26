@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * IvooxRssBridge
  * Returns the latest search result

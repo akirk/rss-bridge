@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class StockFilingsBridge extends FeedExpander {
 	const MAINTAINER = 'captn3m0';
@@ -54,7 +55,7 @@ class StockFilingsBridge extends FeedExpander {
 	}
 
 	/**
-	 * Return \simple_html_dom object
+	 * Return simple_html_dom object
 	 * for the entire html of the product page
 	 */
 	private function getHtml() {

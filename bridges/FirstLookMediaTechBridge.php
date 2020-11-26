@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FirstLookMediaTechBridge extends BridgeAbstract {
 	const NAME = 'First Look Media - Technology';
 	const URI = 'https://tech.firstlook.media';

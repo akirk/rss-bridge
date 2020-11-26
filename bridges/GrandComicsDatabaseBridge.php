@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GrandComicsDatabaseBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'corenting';

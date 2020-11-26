@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TwitterBridge extends BridgeAbstract {
 	const NAME = 'Twitter Bridge';
 	const URI = 'https://twitter.com/';

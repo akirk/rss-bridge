@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ComicsKingdomBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'stjohnjohnson';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class OnVaSortirBridge extends FeedExpander {
 	const MAINTAINER = 'AntoineTurmel';
 	const NAME = 'OnVaSortir';

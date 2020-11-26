@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BakaUpdatesMangaReleasesBridge extends BridgeAbstract {
 	const NAME = 'Baka Updates Manga Releases';
 	const URI = 'https://www.mangaupdates.com/';

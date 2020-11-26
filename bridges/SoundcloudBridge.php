@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SoundCloudBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'kranack, Roliga';

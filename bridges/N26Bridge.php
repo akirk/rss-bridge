@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class N26Bridge extends BridgeAbstract
 {

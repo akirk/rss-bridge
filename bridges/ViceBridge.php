@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ViceBridge extends FeedExpander {
 	const MAINTAINER = 'IceWreck';
 	const NAME = 'Vice Bridge';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ParuVenduImmoBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'polo2ro';

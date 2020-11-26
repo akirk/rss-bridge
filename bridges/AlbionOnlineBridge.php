@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AlbionOnlineBridge extends BridgeAbstract {
 
 	const NAME = 'Albion Online Changelog';

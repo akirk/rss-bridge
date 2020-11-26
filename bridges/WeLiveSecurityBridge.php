@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class WeLiveSecurityBridge extends FeedExpander {
 
 	const MAINTAINER = 'ORelio';

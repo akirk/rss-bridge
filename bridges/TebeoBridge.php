@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class TebeoBridge extends FeedExpander {
 	const NAME = 'Tébéo Bridge';
 	const URI = 'http://www.tebeo.bzh/';

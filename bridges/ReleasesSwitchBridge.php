@@ -1,7 +1,8 @@
 <?php
+namespace RSS_Bridge;
 
 // This bridge depends on Releases3DSBridge
-if (!class_exists('Releases3DSBridge')) {
+if (!class_exists(__NAMESPACE__ . '\\Releases3DSBridge')) {
 	include('Releases3DSBridge.php');
 }
 

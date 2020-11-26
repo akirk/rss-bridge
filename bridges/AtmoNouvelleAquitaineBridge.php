@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AtmoNouvelleAquitaineBridge extends BridgeAbstract {
 
 	const NAME = 'Atmo Nouvelle Aquitaine';

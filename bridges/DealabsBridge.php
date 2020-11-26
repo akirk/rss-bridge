@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DealabsBridge extends PepperBridgeAbstract {
 
 	const NAME = 'Dealabs Bridge';

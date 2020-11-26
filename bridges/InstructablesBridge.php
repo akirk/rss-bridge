@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
 * This class implements a bridge for http://www.instructables.com, supporting
 * general feeds and feeds by category.

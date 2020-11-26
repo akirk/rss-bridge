@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class RadioMelodieBridge extends BridgeAbstract {
 	const NAME = 'Radio Melodie Actu';
 	const URI = 'https://www.radiomelodie.com';

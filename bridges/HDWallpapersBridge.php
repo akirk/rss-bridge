@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class HDWallpapersBridge extends BridgeAbstract {
 	const MAINTAINER = 'nel50n';
 	const NAME = 'HD Wallpapers Bridge';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SensCritiqueBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'kranack';

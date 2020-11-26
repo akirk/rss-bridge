@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 require_once('DanbooruBridge.php');
 
 class GelbooruBridge extends DanbooruBridge {

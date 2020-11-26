@@ -1,5 +1,5 @@
 <?php
-
+namespace RSS_Bridge;
 class RedditBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'dawidsowa';

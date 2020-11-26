@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class IdenticaBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'mitsukarenai';

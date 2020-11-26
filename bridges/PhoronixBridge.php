@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class PhoronixBridge extends FeedExpander {
 
 	const MAINTAINER = 'IceWreck';

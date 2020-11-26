@@ -1,5 +1,5 @@
 <?php
-namespace Friends_RSS_Bridge;
+namespace RSS_Bridge;
 
 class NoCache implements CacheInterface {
 	public function loadData() {

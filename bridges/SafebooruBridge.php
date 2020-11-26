@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 require_once('GelbooruBridge.php');
 
 class SafebooruBridge extends GelbooruBridge {

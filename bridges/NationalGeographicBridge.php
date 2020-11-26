@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class NationalGeographicBridge extends BridgeAbstract {
 
 	const CONTEXT_BY_TOPIC = 'By Topic';

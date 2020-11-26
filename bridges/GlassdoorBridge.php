@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GlassdoorBridge extends BridgeAbstract {
 
 	// Contexts

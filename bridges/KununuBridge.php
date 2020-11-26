@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class KununuBridge extends BridgeAbstract {
 	const MAINTAINER = 'logmanoriginal';
 	const NAME = 'Kununu Bridge';

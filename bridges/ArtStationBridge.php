@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ArtStationBridge extends BridgeAbstract {
 	const NAME = 'ArtStation';
 	const URI = 'https://www.artstation.com';

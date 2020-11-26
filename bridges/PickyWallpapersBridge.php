@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class PickyWallpapersBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'nel50n';

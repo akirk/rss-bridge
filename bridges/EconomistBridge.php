@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class EconomistBridge extends BridgeAbstract {
 	const NAME = 'The Economist: Latest Updates';
 	const URI = 'https://www.economist.com';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class JapanExpoBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'Ginko';

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DarkReadingBridge extends FeedExpander {
 	const MAINTAINER = 'ORelio';
 	const NAME = 'Dark Reading Bridge';

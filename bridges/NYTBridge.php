@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class NYTBridge extends FeedExpander {
 
 	const MAINTAINER = 'IceWreck';

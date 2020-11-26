@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DiceBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'rogerdc';

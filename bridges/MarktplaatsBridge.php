@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class MarktplaatsBridge extends BridgeAbstract {
 	const NAME = 'Marktplaats';

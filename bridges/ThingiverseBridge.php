@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ThingiverseBridge extends BridgeAbstract {
 
 	const NAME = 'Thingiverse Search';

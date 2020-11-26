@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class UnraidCommunityApplicationsBridge extends BridgeAbstract {
 	const NAME = 'Unraid Community Applications';
 	const URI = 'https://forums.unraid.net/topic/38582-plug-in-community-applications/';

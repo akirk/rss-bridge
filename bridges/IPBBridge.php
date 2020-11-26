@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class IPBBridge extends FeedExpander {
 
 	const NAME = 'IPB Bridge';

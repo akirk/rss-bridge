@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class CollegeDeFranceBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'pit-fgfjiudghdf';
@@ -50,7 +51,7 @@ class CollegeDeFranceBridge extends BridgeAbstract {
 			// But unfortunately some don't have any hours info
 			// <a href="/site/institut-physique/
 			// The-Mysteries-of-Decoherence-Sebastien-Gleyzes-[Video-3-35].htm" data-target="after">
-			$timezone = new DateTimeZone('Europe/Paris');
+			$timezone = new \DateTimeZone('Europe/Paris');
 
 			// strpos($element->href, '201') will break in 2020 but it'll
 			// probably break prior to then due to site changes anyway

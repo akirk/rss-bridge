@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class DilbertBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'kranack';

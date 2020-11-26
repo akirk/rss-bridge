@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ASRockNewsBridge extends BridgeAbstract {
 	const NAME = 'ASRock News Bridge';
 	const URI = 'https://www.asrock.com';

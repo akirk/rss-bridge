@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AirBreizhBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'fanch317';

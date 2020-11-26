@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class VieDeMerdeBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'floviolleau';

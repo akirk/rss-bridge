@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class AnimeUltimeBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'ORelio';

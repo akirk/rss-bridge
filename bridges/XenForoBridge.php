@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * This bridge generates feeds for threads from forums running XenForo version 2
  *

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 /**
  * Gitea is a fork of Gogs which may diverge in the future.
  * https://docs.gitea.io/en-us/

@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class BlaguesDeMerdeBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'superbaillot.net, logmanoriginal';

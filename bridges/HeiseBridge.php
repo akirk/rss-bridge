@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class HeiseBridge extends FeedExpander {
 	const MAINTAINER = 'Dreckiger-Dan';

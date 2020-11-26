@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class InternetArchiveBridge extends BridgeAbstract {
 	const NAME = 'Internet Archive Bridge';
 	const URI = 'https://archive.org';

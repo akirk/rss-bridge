@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FurAffinityBridge extends BridgeAbstract {
 	const NAME = 'FurAffinity Bridge';
 	const URI = 'https://www.furaffinity.net';

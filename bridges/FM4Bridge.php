@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class FM4Bridge extends BridgeAbstract
 {

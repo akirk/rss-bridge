@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class GOGBridge extends BridgeAbstract {
 
 	const NAME = 'GOGBridge';

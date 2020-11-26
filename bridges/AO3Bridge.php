@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class AO3Bridge extends BridgeAbstract {
 	const NAME = 'AO3';

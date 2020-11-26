@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class NotAlwaysBridge extends BridgeAbstract {
 
 		const MAINTAINER = 'mozes';

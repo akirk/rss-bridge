@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 /* This is a mashup of FlickrExploreBridge by sebsauvage and FlickrTagBridge
  * by erwang, providing the functionality of both in one.

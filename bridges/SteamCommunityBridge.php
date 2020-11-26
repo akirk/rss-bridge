@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SteamCommunityBridge extends BridgeAbstract {
 	const NAME = 'Steam Community';
 	const URI = 'https://www.steamcommunity.com';

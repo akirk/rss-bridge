@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 
 class DaveRamseyBlogBridge extends BridgeAbstract {
 	const MAINTAINER = 'johnpc';

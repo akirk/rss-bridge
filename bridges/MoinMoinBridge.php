@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class MoinMoinBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'logmanoriginal';

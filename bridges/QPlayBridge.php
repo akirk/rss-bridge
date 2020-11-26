@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class QPlayBridge extends BridgeAbstract {
 	const NAME = 'Q Play';
 	const URI = 'https://www.qplay.pt';

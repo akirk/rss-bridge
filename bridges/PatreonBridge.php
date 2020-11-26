@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class PatreonBridge extends BridgeAbstract {
 	const NAME = 'Patreon Bridge';
 	const URI = 'https://www.patreon.com/';

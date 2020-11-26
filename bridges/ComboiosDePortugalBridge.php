@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ComboiosDePortugalBridge extends BridgeAbstract {
 	const NAME = 'CP | Avisos';
 	const BASE_URI = 'https://www.cp.pt';

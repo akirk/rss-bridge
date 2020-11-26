@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class KoreusBridge extends FeedExpander {
 
 	const MAINTAINER = 'pit-fgfjiudghdf';

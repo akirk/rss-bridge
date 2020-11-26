@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 require_once('Shimmie2Bridge.php');
 
 class MilbooruBridge extends Shimmie2Bridge {

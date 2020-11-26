@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class OtrkeyFinderBridge extends BridgeAbstract {
 	const MAINTAINER = 'mibe';
 	const NAME = 'OtrkeyFinder';
@@ -144,7 +145,7 @@ class OtrkeyFinderBridge extends BridgeAbstract {
 			$item['timestamp'] = DateTime::createFromFormat(
 				'y.m.d_H-i',
 				$matches[0],
-				new DateTimeZone('Europe/Berlin')
+				new \DateTimeZone('Europe/Berlin')
 			)->getTimestamp();
 		}
 

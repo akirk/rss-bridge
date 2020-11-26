@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class SplCenterBridge extends FeedExpander {
 
 	const NAME = 'Southern Poverty Law Center Bridge';

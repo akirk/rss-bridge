@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class FierPandaBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'snroki';

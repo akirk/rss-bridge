@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class LeBonCoinBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'jacknumber';
