@@ -1,4 +1,5 @@
 <?php
+namespace Friends_RSS_Bridge;
 class SoundCloudBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'kranack, Roliga';
@@ -26,6 +27,21 @@ class SoundCloudBridge extends BridgeAbstract {
 	private $feedTitle = null;
 	private $feedIcon = null;
 	private $clientIDCache = null;
+
+	public function detectParameters($url) {
+
+		$params = array();
+
+		// By username
+		$regex = '/^(https?:\/\/)?(www\.)?soundcloud\.com\/([^\/?\n]+)/';
+		if ( preg_match( $regex, $url, $matches ) > 0 ) {
+			$params['u'] = urldecode( $matches[3] );
+			return $params;
+		}
+
+		return null;
+	}
+
 
 	public function collectData(){
 		$res = $this->apiGet('resolve', array(
@@ -77,6 +93,11 @@ class SoundCloudBridge extends BridgeAbstract {
 	}
 
 	public function getName(){
+		switch ( $this->queriedContext ) {
+			case 'u':
+				return 'Soundcloud @' . $this->getInput( 'u' );
+		}
+
 		if($this->feedTitle) {
 			return $this->feedTitle . ' - ' . self::NAME;
 		}
