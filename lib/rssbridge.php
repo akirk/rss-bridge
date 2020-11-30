@@ -54,15 +54,12 @@ define('REPOSITORY', 'https://github.com/RSS-Bridge/rss-bridge/');
 require_once PATH_LIB . 'ActionInterface.php';
 require_once PATH_LIB . 'BridgeInterface.php';
 require_once PATH_LIB . 'CacheInterface.php';
-require_once PATH_LIB . 'FormatInterface.php';
 
 // Classes
 require_once PATH_LIB . 'FactoryAbstract.php';
 require_once PATH_LIB . 'FeedItem.php';
 require_once PATH_LIB . 'Debug.php';
 require_once PATH_LIB . 'Exceptions.php';
-require_once PATH_LIB . 'FormatFactory.php';
-require_once PATH_LIB . 'FormatAbstract.php';
 require_once PATH_LIB . 'BridgeFactory.php';
 require_once PATH_LIB . 'BridgeAbstract.php';
 require_once PATH_LIB . 'FeedExpander.php';
