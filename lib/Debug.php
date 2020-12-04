@@ -14,7 +14,7 @@ namespace RSS_Bridge;
 
 /**
  * Implements functions for debugging purposes. Debugging can be enabled by
- * placing a file named DEBUG in {@see PATH_ROOT}.
+ * placing a file named DEBUG in {@see Constants::PATH_ROOT}.
  *
  * The file specifies a whitelist of IP addresses on which debug mode will be
  * enabled. An empty file enables debug mode for everyone (highly discouraged
@@ -61,28 +61,6 @@ class Debug {
 	 * @return bool True if enabled.
 	 */
 	public static function isEnabled() {
-		static $firstCall = true; // Initialized on first call
-
-		if($firstCall && file_exists(PATH_ROOT . 'DEBUG')) {
-
-			$debug_whitelist = trim(file_get_contents(PATH_ROOT . 'DEBUG'));
-
-			self::$enabled = empty($debug_whitelist) || in_array($_SERVER['REMOTE_ADDR'],
-					explode("\n", str_replace("\r", '', $debug_whitelist)
-				)
-			);
-
-			if(self::$enabled) {
-				ini_set('display_errors', '1');
-				error_reporting(E_ALL);
-
-				self::$secure = !empty($debug_whitelist);
-			}
-
-			$firstCall = false; // Skip check on next call
-
-		}
-
 		return self::$enabled;
 	}
 

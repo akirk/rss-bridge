@@ -1,9 +1,6 @@
 <?php
 namespace RSS_Bridge;
 
-define('WIKIPEDIA_SUBJECT_TFA', 0); // Today's featured article
-define('WIKIPEDIA_SUBJECT_DYK', 1); // Did you know...
-
 class WikipediaBridge extends BridgeAbstract {
 	const MAINTAINER = 'logmanoriginal';
 	const NAME = 'Wikipedia bridge for many languages';
@@ -40,6 +37,9 @@ class WikipediaBridge extends BridgeAbstract {
 			'title' => 'Activate to always load the full article'
 		)
 	));
+	const WIKIPEDIA_SUBJECT_TFA = 0; // Today's featured article
+	const WIKIPEDIA_SUBJECT_DYK = 1; // Did you know...
+
 
 	public function getURI(){
 		if(!is_null($this->getInput('language'))) {
@@ -54,21 +54,21 @@ class WikipediaBridge extends BridgeAbstract {
 	public function getName(){
 		switch($this->getInput('subject')) {
 			case 'tfa':
-				$subject = WIKIPEDIA_SUBJECT_TFA;
+				$subject = self::WIKIPEDIA_SUBJECT_TFA;
 				break;
 			case 'dyk':
-				$subject = WIKIPEDIA_SUBJECT_DYK;
+				$subject = self::WIKIPEDIA_SUBJECT_DYK;
 				break;
 			default: return parent::getName();
 		}
 
 		switch($subject) {
-			case WIKIPEDIA_SUBJECT_TFA:
+			case self::WIKIPEDIA_SUBJECT_TFA:
 				$name = 'Today\'s featured article from '
 				. strtolower($this->getInput('language'))
 				. '.wikipedia.org';
 				break;
-			case WIKIPEDIA_SUBJECT_DYK:
+			case self::WIKIPEDIA_SUBJECT_DYK:
 				$name = 'Did you know? - articles from '
 				. strtolower($this->getInput('language'))
 				. '.wikipedia.org';
@@ -86,13 +86,13 @@ class WikipediaBridge extends BridgeAbstract {
 
 		switch($this->getInput('subject')) {
 			case 'tfa':
-				$subject = WIKIPEDIA_SUBJECT_TFA;
+				$subject = self::WIKIPEDIA_SUBJECT_TFA;
 				break;
 			case 'dyk':
-				$subject = WIKIPEDIA_SUBJECT_DYK;
+				$subject = self::WIKIPEDIA_SUBJECT_DYK;
 				break;
 			default:
-				$subject = WIKIPEDIA_SUBJECT_TFA;
+				$subject = self::WIKIPEDIA_SUBJECT_TFA;
 				break;
 		}
 
@@ -216,11 +216,11 @@ class WikipediaBridge extends BridgeAbstract {
 	*/
 	private function getContentsDe($html, $subject, $fullArticle){
 		switch($subject) {
-			case WIKIPEDIA_SUBJECT_TFA:
+			case self::WIKIPEDIA_SUBJECT_TFA:
 				$element = $html->find('div[id=mf-tfa]', 0);
 				$this->addTodaysFeaturedArticleGeneric($element, $fullArticle);
 				break;
-			case WIKIPEDIA_SUBJECT_DYK:
+			case self::WIKIPEDIA_SUBJECT_DYK:
 				$element = $html->find('div[id=mf-dyk]', 0);
 				$this->addDidYouKnowGeneric($element, $fullArticle);
 				break;
@@ -234,11 +234,11 @@ class WikipediaBridge extends BridgeAbstract {
 	*/
 	private function getContentsFr($html, $subject, $fullArticle){
 		switch($subject) {
-			case WIKIPEDIA_SUBJECT_TFA:
+			case self::WIKIPEDIA_SUBJECT_TFA:
 				$element = $html->find('div[class=accueil_2017_cadre]', 0);
 				$this->addTodaysFeaturedArticleGeneric($element, $fullArticle, 'Lire la suite');
 				break;
-			case WIKIPEDIA_SUBJECT_DYK:
+			case self::WIKIPEDIA_SUBJECT_DYK:
 				$element = $html->find('div[class=accueil_2017_cadre]', 2);
 				$this->addDidYouKnowGeneric($element, $fullArticle);
 				break;
@@ -252,11 +252,11 @@ class WikipediaBridge extends BridgeAbstract {
 	*/
 	private function getContentsEn($html, $subject, $fullArticle){
 		switch($subject) {
-			case WIKIPEDIA_SUBJECT_TFA:
+			case self::WIKIPEDIA_SUBJECT_TFA:
 				$element = $html->find('div[id=mp-tfa]', 0);
 				$this->addTodaysFeaturedArticleGeneric($element, $fullArticle);
 				break;
-			case WIKIPEDIA_SUBJECT_DYK:
+			case self::WIKIPEDIA_SUBJECT_DYK:
 				$element = $html->find('div[id=mp-dyk]', 0);
 				$this->addDidYouKnowGeneric($element, $fullArticle);
 				break;
@@ -270,11 +270,11 @@ class WikipediaBridge extends BridgeAbstract {
 	*/
 	private function getContentsEo($html, $subject, $fullArticle){
 		switch($subject) {
-			case WIKIPEDIA_SUBJECT_TFA:
+			case self::WIKIPEDIA_SUBJECT_TFA:
 				$element = $html->find('div[id=mf-artikolo-de-la-semajno]', 0);
 				$this->addTodaysFeaturedArticleGeneric($element, $fullArticle);
 				break;
-			case WIKIPEDIA_SUBJECT_DYK:
+			case self::WIKIPEDIA_SUBJECT_DYK:
 				$element = $html->find('div[id=mw-content-text]', 0)->find('table', 4)->find('td', 4);
 				$this->addDidYouKnowGeneric($element, $fullArticle);
 				break;
@@ -288,11 +288,11 @@ class WikipediaBridge extends BridgeAbstract {
 	*/
 	private function getContentsNl($html, $subject, $fullArticle){
 		switch($subject) {
-			case WIKIPEDIA_SUBJECT_TFA:
+			case self::WIKIPEDIA_SUBJECT_TFA:
 				$element = $html->find('div[id=mf-uitgelicht]', 0);
 				$this->addTodaysFeaturedArticleGeneric($element, $fullArticle, 'Lees meer');
 				break;
-			case WIKIPEDIA_SUBJECT_DYK:
+			case self::WIKIPEDIA_SUBJECT_DYK:
 				$element = $html->find('div[id=mw-content-text]', 0)->find('table', 4)->find('td', 2);
 				$this->addDidYouKnowGeneric($element, $fullArticle);
 				break;

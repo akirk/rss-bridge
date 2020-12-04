@@ -56,7 +56,7 @@ class InstagramBridge extends BridgeAbstract {
 		if(is_numeric($username)) return $username;
 
 		$cacheFac = new CacheFactory();
-		$cacheFac->setWorkingDir(PATH_LIB_CACHES);
+		$cacheFac->setWorkingDir(Constants::PATH_LIB_CACHES);
 		$cache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
 		$cache->setScope(get_called_class());
 		$cache->setKey(array($username));

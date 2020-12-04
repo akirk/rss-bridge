@@ -28,7 +28,7 @@ class CacheImplementationTest extends TestCase {
 
 	public function dataCachesProvider() {
 		$caches = array();
-		foreach (glob(PATH_LIB_CACHES . '*.php') as $path) {
+		foreach (glob(Constants::PATH_LIB_CACHES . '*.php') as $path) {
 			$caches[basename($path, '.php')] = array($path);
 		}
 		return $caches;

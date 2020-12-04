@@ -445,10 +445,10 @@ EOD;
 	private function getApiKey() {
 
 		$cacheFac = new CacheFactory();
-		$cacheFac->setWorkingDir(PATH_LIB_CACHES);
-		$r_cache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
-		$r_cache->setScope(get_called_class());
-		$r_cache->setKey(array('refresh'));
+		$cacheFac->setWorkingDir( Constants::PATH_LIB_CACHES );
+		$r_cache = $cacheFac->create( Configuration::getConfig( 'cache', 'type' ) );
+		$r_cache->setScope( get_called_class() );
+		$r_cache->setKey( array( 'refresh' ) );
 		$data = $r_cache->loadData();
 
 		$refresh = null;
@@ -460,10 +460,10 @@ EOD;
 		}
 
 		$cacheFac = new CacheFactory();
-		$cacheFac->setWorkingDir(PATH_LIB_CACHES);
-		$cache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
-		$cache->setScope(get_called_class());
-		$cache->setKey(array('api_key'));
+		$cacheFac->setWorkingDir( Constants::PATH_LIB_CACHES );
+		$cache = $cacheFac->create( Configuration::getConfig( 'cache', 'type' ) );
+		$cache->setScope( get_called_class() );
+		$cache->setKey( array( 'api_key' ) );
 		$data = $cache->loadData();
 
 		$apiKey = null;
@@ -497,10 +497,10 @@ EOD;
 		}
 
 		$cacheFac2 = new CacheFactory();
-		$cacheFac2->setWorkingDir(PATH_LIB_CACHES);
-		$gt_cache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
-		$gt_cache->setScope(get_called_class());
-		$gt_cache->setKey(array('guest_token'));
+		$cacheFac2->setWorkingDir( Constants::PATH_LIB_CACHES );
+		$gt_cache = $cacheFac->create( Configuration::getConfig( 'cache', 'type' ) );
+		$gt_cache->setScope( get_called_class() );
+		$gt_cache->setKey( array( 'guest_token' ) );
 		$guestTokenUses = $gt_cache->loadData();
 
 		$guestToken = null;

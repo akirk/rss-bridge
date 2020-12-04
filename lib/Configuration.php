@@ -111,13 +111,13 @@ final class Configuration {
 	 * Returns an error message and aborts execution if the configuration is invalid.
 	 *
 	 * The RSS-Bridge configuration is split into two files:
-	 * - {@see FILE_CONFIG_DEFAULT} The default configuration file that ships
+	 * - {@see Constants::FILE_CONFIG_DEFAULT} The default configuration file that ships
 	 * with every release of RSS-Bridge (do not modify this file!).
-	 * - {@see FILE_CONFIG} The local configuration file that can be modified
+	 * - {@see Constants::FILE_CONFIG} The local configuration file that can be modified
 	 * by server administrators.
 	 *
-	 * RSS-Bridge will first load {@see FILE_CONFIG_DEFAULT} into memory and then
-	 * replace parameters with the contents of {@see FILE_CONFIG}. That way new
+	 * RSS-Bridge will first load {@see Constants::FILE_CONFIG_DEFAULT} into memory and then
+	 * replace parameters with the contents of {@see Constants::FILE_CONFIG}. That way new
 	 * parameters are automatically initialized with default values and custom
 	 * configurations can be reduced to the minimum set of parametes necessary
 	 * (only the ones that changed).
@@ -131,77 +131,21 @@ final class Configuration {
 	 */
 	public static function loadConfiguration() {
 
-		if(!file_exists(FILE_CONFIG_DEFAULT))
-			self::reportError('The default configuration file is missing at ' . FILE_CONFIG_DEFAULT);
+		if(!file_exists(Constants::FILE_CONFIG_DEFAULT))
+			self::reportError('The default configuration file is missing at ' . Constants::FILE_CONFIG_DEFAULT);
 
-		Configuration::$config = parse_ini_file(FILE_CONFIG_DEFAULT, true, INI_SCANNER_TYPED);
+		Configuration::$config = parse_ini_file(Constants::FILE_CONFIG_DEFAULT, true, INI_SCANNER_TYPED);
 		if(!Configuration::$config)
-			self::reportError('Error parsing ' . FILE_CONFIG_DEFAULT);
+			self::reportError('Error parsing ' . Constants::FILE_CONFIG_DEFAULT);
 
-		if(file_exists(FILE_CONFIG)) {
+		if(file_exists(Constants::FILE_CONFIG)) {
 			// Replace default configuration with custom settings
-			foreach(parse_ini_file(FILE_CONFIG, true, INI_SCANNER_TYPED) as $header => $section) {
+			foreach(parse_ini_file(Constants::FILE_CONFIG, true, INI_SCANNER_TYPED) as $header => $section) {
 				foreach($section as $key => $value) {
 					Configuration::$config[$header][$key] = $value;
 				}
 			}
 		}
-
-		if(!is_string(self::getConfig('system', 'timezone'))
-		|| !in_array(self::getConfig('system', 'timezone'), timezone_identifiers_list(\DateTimeZone::ALL_WITH_BC)))
-			self::reportConfigurationError('system', 'timezone');
-
-		date_default_timezone_set(self::getConfig('system', 'timezone'));
-
-		if(!is_string(self::getConfig('proxy', 'url')))
-			self::reportConfigurationError('proxy', 'url', 'Is not a valid string');
-
-		if(!empty(self::getConfig('proxy', 'url'))) {
-			/** URL of the proxy server */
-			define('PROXY_URL', self::getConfig('proxy', 'url'));
-		}
-
-		if(!is_bool(self::getConfig('proxy', 'by_bridge')))
-			self::reportConfigurationError('proxy', 'by_bridge', 'Is not a valid Boolean');
-
-		/** True if proxy usage can be enabled selectively for each bridge */
-		define('PROXY_BYBRIDGE', self::getConfig('proxy', 'by_bridge'));
-
-		if(!is_string(self::getConfig('proxy', 'name')))
-			self::reportConfigurationError('proxy', 'name', 'Is not a valid string');
-
-		/** Name of the proxy server */
-		define('PROXY_NAME', self::getConfig('proxy', 'name'));
-
-		if(!is_string(self::getConfig('cache', 'type')))
-			self::reportConfigurationError('cache', 'type', 'Is not a valid string');
-
-		if(!is_bool(self::getConfig('cache', 'custom_timeout')))
-			self::reportConfigurationError('cache', 'custom_timeout', 'Is not a valid Boolean');
-
-		/** True if the cache timeout can be specified by the user */
-		define('CUSTOM_CACHE_TIMEOUT', self::getConfig('cache', 'custom_timeout'));
-
-		if(!is_bool(self::getConfig('authentication', 'enable')))
-			self::reportConfigurationError('authentication', 'enable', 'Is not a valid Boolean');
-
-		if(!is_string(self::getConfig('authentication', 'username')))
-			self::reportConfigurationError('authentication', 'username', 'Is not a valid string');
-
-		if(!is_string(self::getConfig('authentication', 'password')))
-			self::reportConfigurationError('authentication', 'password', 'Is not a valid string');
-
-		if(!empty(self::getConfig('admin', 'email'))
-		&& !filter_var(self::getConfig('admin', 'email'), FILTER_VALIDATE_EMAIL))
-			self::reportConfigurationError('admin', 'email', 'Is not a valid email address');
-
-		if(!is_string(self::getConfig('error', 'output')))
-			self::reportConfigurationError('error', 'output', 'Is not a valid String');
-
-		if(!is_numeric(self::getConfig('error', 'report_limit'))
-		|| self::getConfig('error', 'report_limit') < 1)
-			self::reportConfigurationError('admin', 'report_limit', 'Value is invalid');
-
 	}
 
 	/**
@@ -229,23 +173,6 @@ final class Configuration {
 	 * @return string The version string.
 	 */
 	public static function getVersion() {
-
-		$headFile = PATH_ROOT . '.git/HEAD';
-
-		// '@' is used to mute open_basedir warning
-		if(@is_readable($headFile)) {
-
-			$revisionHashFile = '.git/' . substr(file_get_contents($headFile), 5, -1);
-			$parts = explode('/', $revisionHashFile);
-
-			if(isset($parts[3])) {
-				$branchName = $parts[3];
-				if(file_exists($revisionHashFile)) {
-					return 'git.' . $branchName . '.' . substr(file_get_contents($revisionHashFile), 0, 7);
-				}
-			}
-		}
-
 		return Configuration::$VERSION;
 
 	}
@@ -264,10 +191,10 @@ final class Configuration {
 
 		$report = "Parameter [{$section}] => \"{$key}\" is invalid!" . PHP_EOL;
 
-		if(file_exists(FILE_CONFIG)) {
-			$report .= 'Please check your configuration file at ' . FILE_CONFIG . PHP_EOL;
-		} elseif(!file_exists(FILE_CONFIG_DEFAULT)) {
-			$report .= 'The default configuration file is missing at ' . FILE_CONFIG_DEFAULT . PHP_EOL;
+		if(file_exists(Constants::FILE_CONFIG)) {
+			$report .= 'Please check your configuration file at ' . Constants::FILE_CONFIG . PHP_EOL;
+		} elseif(!file_exists(Constants::FILE_CONFIG_DEFAULT)) {
+			$report .= 'The default configuration file is missing at ' . Constants::FILE_CONFIG_DEFAULT . PHP_EOL;
 		} else {
 			$report .= 'The default configuration file is broken.' . PHP_EOL
 			. 'Restore the original file from ' . REPOSITORY . PHP_EOL;

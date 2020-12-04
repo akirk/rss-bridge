@@ -49,7 +49,7 @@ function getContents($url, $header = array(), $opts = array(), $returnHeader = f
 
 	// Initialize cache
 	$cacheFac = new CacheFactory();
-	$cacheFac->setWorkingDir(PATH_LIB_CACHES);
+	$cacheFac->setWorkingDir(Constants::PATH_LIB_CACHES);
 	$cache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
 	$cache->setScope('server');
 	$cache->purgeCache(86400); // 24 hours (forced)
@@ -300,7 +300,7 @@ function getSimpleHTMLDOMCached($url,
 
 	// Initialize cache
 	$cacheFac = new CacheFactory();
-	$cacheFac->setWorkingDir(PATH_LIB_CACHES);
+	$cacheFac->setWorkingDir(Constants::PATH_LIB_CACHES);
 	$cache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
 	$cache->setScope('pages');
 	$cache->purgeCache(86400); // 24 hours (forced)

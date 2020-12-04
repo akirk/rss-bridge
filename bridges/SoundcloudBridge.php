@@ -93,7 +93,7 @@ class SoundCloudBridge extends BridgeAbstract {
 			return;
 
 		$cacheFac = new CacheFactory();
-		$cacheFac->setWorkingDir(PATH_LIB_CACHES);
+		$cacheFac->setWorkingDir(Constants::PATH_LIB_CACHES);
 		$this->clientIDCache = $cacheFac->create(Configuration::getConfig('cache', 'type'));
 		$this->clientIDCache->setScope(get_called_class());
 		$this->clientIDCache->setKey(array('client_id'));

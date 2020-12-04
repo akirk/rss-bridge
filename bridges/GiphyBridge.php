@@ -1,6 +1,5 @@
 <?php
 namespace RSS_Bridge;
-define('GIPHY_LIMIT', 10);
 
 class GiphyBridge extends BridgeAbstract {
 
@@ -27,7 +26,7 @@ class GiphyBridge extends BridgeAbstract {
 		$html = getSimpleHTMLDOM(self::URI . '/search/' . urlencode($this->getInput('s') . '/'))
 			or returnServerError('No results for this query.');
 
-		$max = GIPHY_LIMIT;
+		$max = 10;
 		if($this->getInput('n')) {
 			$max = $this->getInput('n');
 		}
