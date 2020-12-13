@@ -46,10 +46,10 @@ class VimeoBridge extends BridgeAbstract {
 			$opts = array(),
 			$lowercase = true,
 			$forceTagsClosed = true,
-			$target_charset = DEFAULT_TARGET_CHARSET,
+			$target_charset = simple_html_dom_const::DEFAULT_TARGET_CHARSET,
 			$stripRN = false, // We want to keep newline characters
-			$defaultBRText = DEFAULT_BR_TEXT,
-			$defaultSpanText = DEFAULT_SPAN_TEXT)
+			$defaultBRText = simple_html_dom_const::DEFAULT_BR_TEXT,
+			$defaultSpanText = simple_html_dom_const::DEFAULT_SPAN_TEXT)
 			or returnServerError('Could not request ' . $this->getURI());
 
 		$json = null; // Holds the JSON data

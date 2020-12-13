@@ -240,10 +240,10 @@ function getSimpleHTMLDOM($url,
 	$opts = array(),
 	$lowercase = true,
 	$forceTagsClosed = true,
-	$target_charset = DEFAULT_TARGET_CHARSET,
+	$target_charset = simple_html_dom_const::DEFAULT_TARGET_CHARSET,
 	$stripRN = true,
-	$defaultBRText = DEFAULT_BR_TEXT,
-	$defaultSpanText = DEFAULT_SPAN_TEXT){
+	$defaultBRText = simple_html_dom_const::DEFAULT_BR_TEXT,
+	$defaultSpanText = simple_html_dom_const::DEFAULT_SPAN_TEXT){
 
 	$content = getContents($url, $header, $opts);
 	return str_get_html($content,
@@ -291,10 +291,10 @@ function getSimpleHTMLDOMCached($url,
 	$opts = array(),
 	$lowercase = true,
 	$forceTagsClosed = true,
-	$target_charset = DEFAULT_TARGET_CHARSET,
+	$target_charset = simple_html_dom_const::DEFAULT_TARGET_CHARSET,
 	$stripRN = true,
-	$defaultBRText = DEFAULT_BR_TEXT,
-	$defaultSpanText = DEFAULT_SPAN_TEXT){
+	$defaultBRText = simple_html_dom_const::DEFAULT_BR_TEXT,
+	$defaultSpanText = simple_html_dom_const::DEFAULT_SPAN_TEXT){
 
 	Debug::log('Caching url ' . $url . ', duration ' . $duration);
 

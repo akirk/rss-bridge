@@ -54,10 +54,10 @@ class KernelBugTrackerBridge extends BridgeAbstract {
 		null,
 		true,
 		true,
-		DEFAULT_TARGET_CHARSET,
+		simple_html_dom_const::DEFAULT_TARGET_CHARSET,
 		false, // Do NOT remove line breaks
-		DEFAULT_BR_TEXT,
-		DEFAULT_SPAN_TEXT);
+		simple_html_dom_const::DEFAULT_BR_TEXT,
+		simple_html_dom_const::DEFAULT_SPAN_TEXT);
 
 		if($html === false)
 			returnServerError('Failed to load page!');

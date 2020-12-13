@@ -110,10 +110,10 @@ final class Fix_Simple_Html_Dom extends simple_html_dom {
 	public static function str_get_html($str,
 	$lowercase = true,
 	$forceTagsClosed = true,
-	$target_charset = DEFAULT_TARGET_CHARSET,
+	$target_charset = simple_html_dom_const::DEFAULT_TARGET_CHARSET,
 	$stripRN = true,
-	$defaultBRText = DEFAULT_BR_TEXT,
-	$defaultSpanText = DEFAULT_SPAN_TEXT)
+	$defaultBRText = simple_html_dom_const::DEFAULT_BR_TEXT,
+	$defaultSpanText = simple_html_dom_const::DEFAULT_SPAN_TEXT)
 	{
 		$dom = new Fix_Simple_Html_Dom(null,
 		$lowercase,
@@ -123,7 +123,7 @@ final class Fix_Simple_Html_Dom extends simple_html_dom {
 		$defaultBRText,
 		$defaultSpanText);
 
-		if (empty($str) || strlen($str) > MAX_FILE_SIZE) {
+		if (empty($str) || strlen($str) > simple_html_dom_const::MAX_FILE_SIZE) {
 
 			$dom->clear();
 			return false;

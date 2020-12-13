@@ -16,7 +16,7 @@ timezone = "UTC"
 
 ; Defines the cache type used by RSS-Bridge
 ; type = "file"
-type = "no"
+type = "WordPress"
 
 ; Allow users to specify custom timeout for specific requests.
 ; true  = enabled
