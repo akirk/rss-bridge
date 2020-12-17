@@ -132,11 +132,14 @@ class FlickrBridge extends BridgeAbstract {
 			$item['uri'] = self::URI . 'photo.gne?id=' . $model['id'];
 
 			$description = (array_key_exists('description', $model) ? $model['description'] : '');
-
+			$i = $this->extractContentImage($model);
+			if ( ! $i ) {
+				continue;
+			}
 			$item['content'] = '<a href="'
 			. $item['uri']
 			. '"><img src="'
-			. $this->extractContentImage($model)
+			. $i
 			. '" style="max-width: 640px; max-height: 480px;"/></a><br><p>'
 			. urldecode($description)
 			. '</p>';
@@ -167,6 +170,20 @@ class FlickrBridge extends BridgeAbstract {
 			default:
 				return parent::getURI();
 		}
+	}
+
+	public function detectParameters($url) {
+
+		$params = array();
+
+		// By username
+		$regex = '/^(https?:\/\/)?(www\.)?flickr\.com\/people\/([^\/?\n]+)\/?/';
+		if ( preg_match( $regex, $url, $matches ) > 0 ) {
+			$params['u'] = urldecode( $matches[3] );
+			return $params;
+		}
+
+		return null;
 	}
 
 	public function getName() {
@@ -257,6 +274,9 @@ class FlickrBridge extends BridgeAbstract {
 				$areas[$image_area] = $size['url'];
 			}
 
+		}
+		if ( empty( $areas ) ) {
+			return false;
 		}
 
 		return $this->fixURL(min($areas));

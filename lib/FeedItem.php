@@ -59,6 +59,9 @@ class FeedItem {
 	/** @var string Unique ID for the current item */
 	protected $uid = null;
 
+	/** @var string The WordPress post format for the current item */
+	protected $post_format = 'standard';
+
 	/** @var array Associative list of additional parameters */
 	protected $misc = array(); // Custom parameters
 
@@ -409,6 +412,27 @@ namespace RSS_Bridge;
 	}
 
 	/**
+	 * Get the post format
+	 *
+	 * @param string The post format for WordPress.
+	 */
+	public function setPostFormat( $post_format ) {
+		return $this->post_format = $post_format;
+	}
+
+	/**
+	 * Get the post format
+	 *
+	 * @param string The post format for WordPress.
+	 */
+	public function getPostFormat() {
+		if ( ! isset( $this->post_format ) ) {
+			return 'standard';
+		}
+		return $this->post_format;
+	}
+
+	/**
 	 * Set unique id.
 	 *
 	 * Use {@see FeedItem::getUid()} to get the unique id.
@@ -495,6 +519,7 @@ namespace RSS_Bridge;
 			case 'content': $this->setContent($value); break;
 			case 'enclosures': $this->setEnclosures($value); break;
 			case 'categories': $this->setCategories($value); break;
+			case 'post-format': $this->setPostFormat($value); break;
 			case 'uid': $this->setUid($value); break;
 			default: $this->addMisc($name, $value);
 		}
@@ -518,6 +543,7 @@ namespace RSS_Bridge;
 			case 'content': return $this->getContent();
 			case 'enclosures': return $this->getEnclosures();
 			case 'categories': return $this->getCategories();
+			case 'post-format': return $this->getPostFormat();
 			case 'uid': return $this->getUid();
 			default:
 				if(array_key_exists($name, $this->misc))

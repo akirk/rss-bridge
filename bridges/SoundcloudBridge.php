@@ -28,8 +28,20 @@ class SoundCloudBridge extends BridgeAbstract {
 	private $feedIcon = null;
 	private $clientIDCache = null;
 
-	private $clientIdRegex = '/client_id.*?"(.+?)"/';
-	private $widgetRegex = '/widget-.+?\.js/';
+	public function detectParameters($url) {
+
+			$params = array();
+
+			// By username
+			$regex = '/^(https?:\/\/)?(www\.)?soundcloud\.com\/([^\/]+)\/?$/';
+			if ( preg_match( $regex, $url, $matches ) > 0 ) {
+				$params['u'] = urldecode( $matches[3] );
+				return $params;
+			}
+
+			return null;
+		}
+
 
 	public function collectData(){
 		$res = $this->apiGet('resolve', array(
@@ -81,6 +93,11 @@ class SoundCloudBridge extends BridgeAbstract {
 	}
 
 	public function getName(){
+		switch ( $this->queriedContext ) {
+			case 'u':
+			return 'Soundcloud @' . $this->getInput( 'u' );
+		}
+
 		if($this->feedTitle) {
 			return $this->feedTitle . ' - ' . self::NAME;
 		}

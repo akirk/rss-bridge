@@ -155,6 +155,7 @@ class InstagramBridge extends BridgeAbstract {
 				default: break;
 			}
 			$item['timestamp'] = $media->taken_at_timestamp;
+			$item['post-format'] = 'image';
 
 			$this->items[] = $item;
 		}
@@ -250,6 +251,20 @@ class InstagramBridge extends BridgeAbstract {
 
 		}
 
+	}
+
+	public function detectParameters($url) {
+
+		$params = array();
+
+		// By username
+		$regex = '/^(https?:\/\/)?(www\.)?instagram\.com\/([^\/?\n]+)\/?$/';
+		if ( preg_match( $regex, $url, $matches ) > 0 ) {
+			$params['u'] = urldecode( $matches[3] );
+			return $params;
+		}
+
+		return null;
 	}
 
 	public function getName(){
