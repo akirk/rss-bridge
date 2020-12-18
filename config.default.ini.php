@@ -68,7 +68,7 @@ password = ""
 ; "feed" = As part of the feed (default)
 ; "http" = As HTTP error message
 ; "none" = No errors are reported
-output = "feed"
+output = "http"
 
 ; Defines how often an error must occur before it is reported to the user
 report_limit = 1
