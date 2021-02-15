@@ -1,4 +1,5 @@
 <?php
+namespace RSS_Bridge;
 class ReutersBridge extends BridgeAbstract
 {
 	const MAINTAINER = 'hollowleviathan, spraynard, csisoap';
@@ -54,6 +55,38 @@ class ReutersBridge extends BridgeAbstract
 			)
 		)
 	);
+
+	public function detectParameters($url) {
+			$feed_mapping = array(
+				'https://www.reuters.com/business/aerospace' => 'aerospace',
+				'https://www.reuters.com/business' => 'business',
+				'https://www.reuters.com/world/china' => 'china',
+				'https://www.reuters.com/business/energy' => 'energy',
+				'https://www.reuters.com/news/entertainment' => 'chan:8ym8q8dl',
+				'https://www.reuters.com/business/environment' => 'chan:6u4f0jgs',
+				'https://www.reuters.com/business/healthcare-pharmaceuticals' => 'chan:8hw7807a',
+				'https://www.reuters.com/lifestyle' => 'life',
+				'https://www.reuters.com/markets' => 'markets',
+				'https://www.reuters.com/world/us-politics' => 'politics',
+				'https://www.reuters.com/lifestyle/science' => 'science',
+				'https://www.reuters.com/investigates' => 'special-reports',
+				'https://www.reuters.com/lifestyle/sports' => 'sports',
+				'https://www.reuters.com/technology' => 'tech',
+				'https://www.reuters.com' => 'home/topnews',
+				'https://www.reuters.com/world/uk' => 'chan:61leiu7j',
+				'https://www.reuters.com/world/us' => 'us',
+				'https://www.reuters.com/theWire' => 'wire',
+				'https://www.reuters.com/world' => 'world',
+			);
+			$params = array();
+			$url = str_replace( 'http://', 'https://', rtrim( $url, '/' ) );
+			if ( isset( $feed_mapping[ $url ] ) ) {
+				$params['feed'] = $feed_mapping[ $url ];
+				return $params;
+			}
+
+			return null;
+		}
 
 	/**
 	 * Performs an HTTP request to the Reuters API and returns decoded JSON
