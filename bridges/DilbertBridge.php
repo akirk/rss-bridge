@@ -30,6 +30,7 @@ class DilbertBridge extends BridgeAbstract {
 			$item['title'] = $title;
 			$item['author'] = 'Scott Adams';
 			$item['timestamp'] = $date;
+			$item['post-format'] = 'image';
 			$item['content'] = '<img src="' . $comic . '" alt="' . $img->alt . '" />';
 			$this->items[] = $item;
 		}
